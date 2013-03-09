@@ -5,11 +5,126 @@
   <script type="text/javascript" src="validate.js"></script>
 </head>
 <body>
-  To bill a credit card, simply fill out this form:
   <form>
-    <label>Bill Description:</label>
-    <input type="text" id="desc" /><br>
-    <input type="submit" />
+    <input type="text" id="desc" placeholder='Description' /><br />
+    
+    <input type="text" id="amount" placeholder='Amount Ex: $100.00' /><br /><br />
+
+    <input type="text" id="cardholder_name" placeholder='Cardholder Name' /><br />
+    <select id='card_type'>
+      <option value='choose'>-- Card type --</option>
+      <option value='visa'>VISA</option>
+      <option value='amex'>AMEX</option>
+      <option value='mc'>MasterCard</option>
+      <option value='discover'>Discover</option>
+    </select><br />
+
+    <input type="text" id="cc_number" placeholder='Credit Card Number' /><br />
+
+    <select id='exp_mo'>
+      <option value='choose'>-- Exp Mo --</option>
+      <option value='Jan'>Jan</option>
+      <option value='Feb'>Feb</option>
+      <option value='Mar'>Mar</option>
+      <option value='Apr'>Apr</option>
+
+      <option value='May'>May</option>
+      <option value='Jun'>Jun</option>
+      <option value='Jul'>Jul</option>
+      <option value='Aug'>Aug</option>
+
+      <option value='Sep'>Sep</option>
+      <option value='Oct'>Oct</option>
+      <option value='Nov'>Nov</option>
+      <option value='Dec'>Dec</option>
+    </select>
+
+    <select id='exp_yr'>
+      <option value='choose'>-- Exp Yr --</option>
+      <option value='2013'>2013</option>
+      <option value='2014'>2014</option>
+      <option value='2015'>2015</option>
+      <option value='2016'>2016</option>
+    </select><br />
+
+    <br>
+
+    <input type="text" id="ccv" placeholder='CCV (on back of card)' /><br /><br />
+
+
+    <input type="text" id="address" placeholder='Billing Address' /><br />
+    <input type="text" id="apt" placeholder='Apt' /><br />
+    <input type="text" id="city" placeholder='City' />
+
+    <select id='state'>
+      <option value='choose'>-- State --</option>
+      <option value='AK'>AK</option>
+      <option value='AL'>AL</option>
+      <option value='AR'>AR</option>
+      <option value='AZ'>AZ</option>
+
+      <option value='CA'>CA</option>
+      <option value='CO'>CO</option>
+      <option value='CT'>CT</option>
+      <option value='DE'>DE</option>
+
+      <option value='FL'>FL</option>
+      <option value='GA'>GA</option>
+      <option value='HI'>HI</option>
+      <option value='IA'>IA</option>
+
+      <option value='ID'>ID</option>
+      <option value='IL'>IL</option>
+      <option value='IN'>IN</option>
+      <option value='KS'>KS</option>
+
+      <option value='KY'>KY</option>
+      <option value='LA'>LA</option>
+      <option value='MA'>MA</option>
+      <option value='MD'>MD</option>
+
+      <option value='ME'>ME</option>
+      <option value='MI'>MI</option>
+      <option value='MN'>MN</option>
+      <option value='MO'>MO</option>
+
+      <option value='MS'>MS</option>
+      <option value='MT'>MT</option>
+      <option value='NC'>NC</option>
+      <option value='ND'>ND</option>
+
+      <option value='NE'>NE</option>
+      <option value='NH'>NH</option>
+      <option value='NJ'>NJ</option>
+      <option value='NM'>NM</option>
+
+      <option value='NV'>NV</option>
+      <option value='NY'>NY</option>
+      <option value='OH'>OH</option>
+      <option value='OK'>OK</option>
+
+      <option value='OR'>OR</option>
+      <option value='PA'>PA</option>
+      <option value='RI'>RI</option>
+      <option value='SC'>SC</option>
+
+      <option value='SD'>SD</option>
+      <option value='TN'>TN</option>
+      <option value='TX'>TX</option>
+      <option value='UT'>UT</option>
+
+      <option value='VA'>VA</option>
+      <option value='VT'>VT</option>
+      <option value='WA'>WA</option>
+      <option value='WI'>WI</option>
+
+      <option value='WV'>WV</option>
+      <option value='WY'>WY</option>
+    </select>
+
+    <input type="text" id="zip" placeholder='Zip Code' /><br />
+
+    <br /><input type="submit" />
   </form>
 </body>
 </html>
