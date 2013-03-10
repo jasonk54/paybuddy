@@ -1,10 +1,14 @@
 <html>
 <head>
+  <title>Paybuddy</title>
+  <link rel="stylesheet" type="text/css" href="reset.css" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script type="text/javascript" src="validate.js"></script>
 </head>
 <body>
+  <h1>Paybuddy Payment Form</h1>
+  <br />
   <form>
     <input type="text" id="desc" placeholder='Description' /><br />
     
@@ -122,8 +126,13 @@
       <option value='WY'>WY</option>
     </select>
 
-    <input type="text" id="zip" placeholder='Zip Code' /><br />
-
+    <input type="text" id="zip" placeholder='Zip Code' /><br /><br />
+    <input id="one-time" name='payment_frequency' value='one' type="radio">One-time<br />
+    <input id="monthly"  name='payment_frequency' value='month' type="radio">Monthly<br />
+    <input id="annual"   name='payment_frequency' value='annual' type="radio">Annual<br />
+    
+    <br /><input id="email_conf" value="conf" type="checkbox"> <span>Receive payment confirmation email?</span><br />
+    <input type='email' name='email' placeholder='Email' class='payment_conf'  />
     <br /><input type="submit" />
   </form>
 </body>
