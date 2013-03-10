@@ -9,3 +9,8 @@ h1 {
 .payment_conf {
   display: none;
 }
+
+#span, #spanCCV {
+  display: none;
+  color: red;
+}

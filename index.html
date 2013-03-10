@@ -23,7 +23,7 @@
       <option value='discover'>Discover</option>
     </select><br />
 
-    <input type="text" id="cc_number" placeholder='Credit Card Number' /><br />
+    <input type="text" id="cc_number" placeholder='Credit Card Number' /><span id='span'>Invalid Credit Card number</span><br />
 
     <select id='exp_mo'>
       <option value='choose'>-- Exp Mo --</option>
@@ -53,7 +53,7 @@
 
     <br>
 
-    <input type="text" id="ccv" placeholder='CCV (on back of card)' /><br /><br />
+    <input type="text" id="ccv" placeholder='CCV (on back of card)' /><span id ='spanCCV'>Invalid CCV</span><br /><br />
 
 
     <input type="text" id="address" placeholder='Billing Address' /><br />
@@ -133,7 +133,7 @@
     
     <br /><input id="email_conf" value="conf" type="checkbox"> <span>Receive payment confirmation email?</span><br />
     <input type='email' name='email' placeholder='Email' class='payment_conf'  />
-    <br /><input type="submit" />
+    <br /><input type="submit" name='submit'/>
   </form>
 </body>
 </html>
